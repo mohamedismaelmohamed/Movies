@@ -19,10 +19,7 @@ class UpddateProfile extends StatelessWidget {
 
         children: [
           SizedBox(height: 20,),
-InkWell(onTap: () {
-
-},
-    child: Image.asset('assets/gamer (1).png')),
+Image.asset('assets/gamer (1).png'),
           SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.all(12.0),
