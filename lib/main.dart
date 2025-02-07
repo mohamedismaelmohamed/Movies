@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movies/UpdateProfileImage.dart';
 import 'package:movies/updateProfile.dart';
 
 void main() {
@@ -15,9 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      initialRoute: UpdateProfileImage.routeName,
+      initialRoute: UpddateProfile.routeName,
       routes: {
-        UpdateProfileImage.routeName: (context) => UpdateProfileImage(),
+
+        UpddateProfile.routeName: (context) => UpddateProfile(),
 
 
       },

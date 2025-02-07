@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies/custom_button.dart';
+import 'package:movies/custom_text_feild.dart';
 
 class UpddateProfile extends StatelessWidget {
   static const String routeName = 'UpddateProfile';
@@ -10,32 +11,43 @@ class UpddateProfile extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(backgroundColor: Colors.black,
       appBar: AppBar(
-backgroundColor: Colors.black,
+        backgroundColor: Colors.black,
         title: Center(child: Text('pick Avatar',style: TextStyle(fontSize: 16,color: Colors.yellow),)),
       ),
       body: Column(crossAxisAlignment: CrossAxisAlignment.center,
 
 
         children: [
-          SizedBox(height: 40,),
-          Center(
-              child: Image.asset('assets/gamer (1).png')),
           SizedBox(height: 20,),
-          CustomButton(
-              itemColor: Color(0xFF282A28),textColor:Colors.white ,
+InkWell(onTap: () {
+  Text('data');
+},
+    child: Image.asset('assets/gamer (1).png')),
+          SizedBox(height: 20,),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: CustomTextFeild(
+             prefix: Image.asset('assets/iconProfile.png',),
+                borderColor: Colors.black,
+                hintText: 'John Safwat'),
+          ),
+          SizedBox(height: 20,),
 
-            title: 'John Safwat',),
-          CustomButton(
-            itemColor: Color(0xFF282A28),textColor:Colors.white ,
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: CustomTextFeild(
+                prefix: Image.asset('assets/iconPhone.png'),
 
-            title: '01200000000',),
+                borderColor: Colors.black,
+                hintText: '01200000000'),
+          ),
 
           Row(
             children: [
               Text('Reset Password',style: TextStyle(color: Colors.white),),
             ],
           ),
-          SizedBox(height: 150,),
+Spacer(),
           CustomButton(
             itemColor: Color(0xFFE82626),textColor:Colors.white ,
 
@@ -43,7 +55,7 @@ backgroundColor: Colors.black,
           CustomButton(
             itemColor: Color(0xFFF6BD00),textColor:Colors.white ,
 
-            title: 'Update Data',),
+            title: 'Update Data',)
         ],
       ),
     );

@@ -9,7 +9,7 @@ class CustomTextFeild extends StatelessWidget {
       this.prefix,
       this.text,
       this.sufix,
-      this.borderColor = Colors.yellow,
+      this.borderColor ,
       this.maxLines = 1,
       this.onChanged,
       this.security = false,
@@ -28,6 +28,7 @@ class CustomTextFeild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+
       style: TextStyle(color: Colors.white,),
       obscureText: security,
       initialValue: text,
@@ -36,7 +37,7 @@ class CustomTextFeild extends StatelessWidget {
       maxLines: maxLines,
       decoration: InputDecoration(
         filled: true,
-        fillColor: Color(0xff282A28),
+        fillColor: Color(0xFF282A28),
         hintText: hintText,
         hintStyle: TextStyle(color: Colors.white),
         prefixIcon: prefix,
@@ -44,7 +45,7 @@ class CustomTextFeild extends StatelessWidget {
         disabledBorder: makeAllBorder(color: Colors.grey, radius: 16),
         enabledBorder: makeAllBorder(color: borderColor!, radius: 16),
         focusedBorder:
-            makeAllBorder(color: Colors.yellow, radius: 16),
+            makeAllBorder(color: Colors.black, radius: 16),
         focusedErrorBorder:
             makeAllBorder(color: Colors.red, radius: 16),
         errorBorder: makeAllBorder(color: Colors.red, radius: 16),
