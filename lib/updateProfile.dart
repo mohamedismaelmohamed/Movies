@@ -18,7 +18,7 @@ class UpddateProfile extends StatelessWidget {
 
 
         children: [
-          SizedBox(height: 20,),
+          SizedBox(height: 20),
 Image.asset('assets/gamer (1).png'),
           SizedBox(height: 20,),
           Padding(
